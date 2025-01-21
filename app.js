@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/', (req, res) => {
-    res.send('Hello Rushikesh React Developer...!');
+    res.send('Hello Rushikesh React Developer Lead...!');
 });
 
 // Start server
