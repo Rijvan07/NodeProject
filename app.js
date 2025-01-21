@@ -37,7 +37,11 @@ app.get('/api/', (req, res) => {
     res.send('Hello World Sahil...!');
 });
 
+app.get('/api/', (req, res) => {
+    res.send('Plz Check it Sahil Sir...!');
+});
+
 // Start server
-app.listen(process.env.PORT || 80, () => {
-    console.log(`Server listening on port ${process.env.PORT || 80}`);
+app.listen(process.env.PORT || 8000, () => {
+    console.log(`Server listening on port ${process.env.PORT || 8000}`);
 });
