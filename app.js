@@ -33,9 +33,6 @@ app.use('/api/generate_password', generatePassword);
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
-app.get('/api/', (req, res) => {
-    res.send('Hello World Sahil...!');
-});
 
 app.get('/api/', (req, res) => {
     res.send('Plz Check it Sahil Sir...!');
