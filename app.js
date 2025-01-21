@@ -29,14 +29,14 @@ app.use('/api/forgot_password', forgotPassword);
 app.use('/api/get_user', getUser);
 app.use('/api/generate_password', generatePassword);
 
+app.get('/api', (req, res) => {
+    res.send('Hello Rushikesh...!');
+});
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.get('/api/', (req, res) => {
-    res.send('Hello Rushikesh...!');
-});
 
 // Start server
 app.listen(process.env.PORT || 8000, () => {
