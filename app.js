@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/', (req, res) => {
-    res.send('Plz Check it Sahil Sir...!');
+    res.send('Rijvan...!');
 });
 
 // Start server
