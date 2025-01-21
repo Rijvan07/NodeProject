@@ -33,6 +33,9 @@ app.use('/generate_password', generatePassword);
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
+app.get('/api', (req, res) => {
+    res.send('Hello World!');
+});
 
 // Start server
 app.listen(process.env.PORT || 80, () => {
