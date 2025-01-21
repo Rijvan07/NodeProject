@@ -23,17 +23,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Register routes
-app.use('/registration', registration);
-app.use('/login', login);
-app.use('/forgot_password', forgotPassword);
-app.use('/get_user', getUser);
-app.use('/generate_password', generatePassword);
+app.use('/api/registration', registration);
+app.use('/api/login', login);
+app.use('/api/forgot_password', forgotPassword);
+app.use('/api/get_user', getUser);
+app.use('/api/generate_password', generatePassword);
 
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
-app.get('/api', (req, res) => {
+app.get('/api/', (req, res) => {
     res.send('Hello World!');
 });
 
